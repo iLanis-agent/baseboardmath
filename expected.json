@@ -1,0 +1,956 @@
+{
+ "cases": [
+  {
+   "fn": "pieces",
+   "args": [
+    "126",
+    "8"
+   ],
+   "expect": "The 126 ft of trim in 8 ft pieces takes 16 pieces, leaving 2 ft."
+  },
+  {
+   "fn": "cuts",
+   "args": [
+    "5",
+    "36",
+    "96"
+   ],
+   "expect": "The 5 runs of 36 inches from 96 inch pieces take 3 pieces, 2 runs from each piece, leaving 108 inches."
+  },
+  {
+   "fn": "nails",
+   "args": [
+    "126",
+    "16",
+    "2"
+   ],
+   "expect": "The 126 ft of trim at 16 inches takes 96 nailing points, 2 nails each, 192 nails in all."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "16",
+    "7.25"
+   ],
+   "expect": "The 16 pieces at $7.25 cost $116.00."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "1",
+    "1"
+   ],
+   "expect": "The 1 ft of trim in 1 ft pieces takes 1 piece, leaving 0 ft."
+  },
+  {
+   "fn": "cuts",
+   "args": [
+    "1",
+    "96",
+    "96"
+   ],
+   "expect": "The 1 run of 96 inches from 96 inch pieces take 1 piece, 1 run from each piece, leaving 0 inches."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "29497",
+    "40"
+   ],
+   "expect": "The 29497 ft of trim in 40 ft pieces takes 738 pieces, leaving 23 ft."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "88556",
+    "15"
+   ],
+   "expect": "The 88556 ft of trim in 15 ft pieces takes 5904 pieces, leaving 4 ft."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "81451",
+    "17"
+   ],
+   "expect": "The 81451 ft of trim in 17 ft pieces takes 4792 pieces, leaving 13 ft."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "76284",
+    "21"
+   ],
+   "expect": "The 76284 ft of trim in 21 ft pieces takes 3633 pieces, leaving 9 ft."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "98715",
+    "8"
+   ],
+   "expect": "The 98715 ft of trim in 8 ft pieces takes 12340 pieces, leaving 5 ft."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "76187",
+    "22"
+   ],
+   "expect": "The 76187 ft of trim in 22 ft pieces takes 3464 pieces, leaving 21 ft."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "27310",
+    "1"
+   ],
+   "expect": "The 27310 ft of trim in 1 ft pieces takes 27310 pieces, leaving 0 ft."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "13272",
+    "36"
+   ],
+   "expect": "The 13272 ft of trim in 36 ft pieces takes 369 pieces, leaving 12 ft."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "86260",
+    "46"
+   ],
+   "expect": "The 86260 ft of trim in 46 ft pieces takes 1876 pieces, leaving 36 ft."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "39879",
+    "48"
+   ],
+   "expect": "The 39879 ft of trim in 48 ft pieces takes 831 pieces, leaving 9 ft."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "51376",
+    "10"
+   ],
+   "expect": "The 51376 ft of trim in 10 ft pieces takes 5138 pieces, leaving 4 ft."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "51588",
+    "37"
+   ],
+   "expect": "The 51588 ft of trim in 37 ft pieces takes 1395 pieces, leaving 27 ft."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "25542",
+    "20"
+   ],
+   "expect": "The 25542 ft of trim in 20 ft pieces takes 1278 pieces, leaving 18 ft."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "8933",
+    "14"
+   ],
+   "expect": "The 8933 ft of trim in 14 ft pieces takes 639 pieces, leaving 13 ft."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "49473",
+    "36"
+   ],
+   "expect": "The 49473 ft of trim in 36 ft pieces takes 1375 pieces, leaving 27 ft."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "20560",
+    "41"
+   ],
+   "expect": "The 20560 ft of trim in 41 ft pieces takes 502 pieces, leaving 22 ft."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "50764",
+    "38"
+   ],
+   "expect": "The 50764 ft of trim in 38 ft pieces takes 1336 pieces, leaving 4 ft."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "53695",
+    "49"
+   ],
+   "expect": "The 53695 ft of trim in 49 ft pieces takes 1096 pieces, leaving 9 ft."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "45396",
+    "14"
+   ],
+   "expect": "The 45396 ft of trim in 14 ft pieces takes 3243 pieces, leaving 6 ft."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "39104",
+    "43"
+   ],
+   "expect": "The 39104 ft of trim in 43 ft pieces takes 910 pieces, leaving 26 ft."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "19218",
+    "6"
+   ],
+   "expect": "The 19218 ft of trim in 6 ft pieces takes 3203 pieces, leaving 0 ft."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "1795",
+    "18"
+   ],
+   "expect": "The 1795 ft of trim in 18 ft pieces takes 100 pieces, leaving 5 ft."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "8660",
+    "43"
+   ],
+   "expect": "The 8660 ft of trim in 43 ft pieces takes 202 pieces, leaving 26 ft."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "24649",
+    "28"
+   ],
+   "expect": "The 24649 ft of trim in 28 ft pieces takes 881 pieces, leaving 19 ft."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "30650",
+    "46"
+   ],
+   "expect": "The 30650 ft of trim in 46 ft pieces takes 667 pieces, leaving 32 ft."
+  },
+  {
+   "fn": "cuts",
+   "args": [
+    "25420",
+    "330",
+    "396"
+   ],
+   "expect": "The 25420 runs of 330 inches from 396 inch pieces take 25420 pieces, 1 run from each piece, leaving 1677720 inches."
+  },
+  {
+   "fn": "cuts",
+   "args": [
+    "56672",
+    "396",
+    "641"
+   ],
+   "expect": "The 56672 runs of 396 inches from 641 inch pieces take 56672 pieces, 1 run from each piece, leaving 13884640 inches."
+  },
+  {
+   "fn": "cuts",
+   "args": [
+    "51940",
+    "465",
+    "471"
+   ],
+   "expect": "The 51940 runs of 465 inches from 471 inch pieces take 51940 pieces, 1 run from each piece, leaving 311640 inches."
+  },
+  {
+   "fn": "cuts",
+   "args": [
+    "45564",
+    "20",
+    "52"
+   ],
+   "expect": "The 45564 runs of 20 inches from 52 inch pieces take 22782 pieces, 2 runs from each piece, leaving 273384 inches."
+  },
+  {
+   "fn": "cuts",
+   "args": [
+    "85756",
+    "326",
+    "509"
+   ],
+   "expect": "The 85756 runs of 326 inches from 509 inch pieces take 85756 pieces, 1 run from each piece, leaving 15693348 inches."
+  },
+  {
+   "fn": "cuts",
+   "args": [
+    "26453",
+    "168",
+    "358"
+   ],
+   "expect": "The 26453 runs of 168 inches from 358 inch pieces take 13227 pieces, 2 runs from each piece, leaving 291162 inches."
+  },
+  {
+   "fn": "cuts",
+   "args": [
+    "40066",
+    "224",
+    "355"
+   ],
+   "expect": "The 40066 runs of 224 inches from 355 inch pieces take 40066 pieces, 1 run from each piece, leaving 5248646 inches."
+  },
+  {
+   "fn": "cuts",
+   "args": [
+    "70885",
+    "84",
+    "645"
+   ],
+   "expect": "The 70885 runs of 84 inches from 645 inch pieces take 10127 pieces, 7 runs from each piece, leaving 577575 inches."
+  },
+  {
+   "fn": "cuts",
+   "args": [
+    "4163",
+    "422",
+    "427"
+   ],
+   "expect": "The 4163 runs of 422 inches from 427 inch pieces take 4163 pieces, 1 run from each piece, leaving 20815 inches."
+  },
+  {
+   "fn": "cuts",
+   "args": [
+    "36767",
+    "4",
+    "157"
+   ],
+   "expect": "The 36767 runs of 4 inches from 157 inch pieces take 943 pieces, 39 runs from each piece, leaving 983 inches."
+  },
+  {
+   "fn": "cuts",
+   "args": [
+    "80898",
+    "234",
+    "830"
+   ],
+   "expect": "The 80898 runs of 234 inches from 830 inch pieces take 26966 pieces, 3 runs from each piece, leaving 3451648 inches."
+  },
+  {
+   "fn": "cuts",
+   "args": [
+    "96047",
+    "740",
+    "871"
+   ],
+   "expect": "The 96047 runs of 740 inches from 871 inch pieces take 96047 pieces, 1 run from each piece, leaving 12582157 inches."
+  },
+  {
+   "fn": "cuts",
+   "args": [
+    "1377",
+    "271",
+    "797"
+   ],
+   "expect": "The 1377 runs of 271 inches from 797 inch pieces take 689 pieces, 2 runs from each piece, leaving 175966 inches."
+  },
+  {
+   "fn": "cuts",
+   "args": [
+    "72167",
+    "593",
+    "882"
+   ],
+   "expect": "The 72167 runs of 593 inches from 882 inch pieces take 72167 pieces, 1 run from each piece, leaving 20856263 inches."
+  },
+  {
+   "fn": "cuts",
+   "args": [
+    "89322",
+    "13",
+    "32"
+   ],
+   "expect": "The 89322 runs of 13 inches from 32 inch pieces take 44661 pieces, 2 runs from each piece, leaving 267966 inches."
+  },
+  {
+   "fn": "cuts",
+   "args": [
+    "41310",
+    "70",
+    "159"
+   ],
+   "expect": "The 41310 runs of 70 inches from 159 inch pieces take 20655 pieces, 2 runs from each piece, leaving 392445 inches."
+  },
+  {
+   "fn": "cuts",
+   "args": [
+    "91811",
+    "18",
+    "21"
+   ],
+   "expect": "The 91811 runs of 18 inches from 21 inch pieces take 91811 pieces, 1 run from each piece, leaving 275433 inches."
+  },
+  {
+   "fn": "cuts",
+   "args": [
+    "78722",
+    "103",
+    "326"
+   ],
+   "expect": "The 78722 runs of 103 inches from 326 inch pieces take 26241 pieces, 3 runs from each piece, leaving 446200 inches."
+  },
+  {
+   "fn": "cuts",
+   "args": [
+    "41835",
+    "181",
+    "302"
+   ],
+   "expect": "The 41835 runs of 181 inches from 302 inch pieces take 41835 pieces, 1 run from each piece, leaving 5062035 inches."
+  },
+  {
+   "fn": "cuts",
+   "args": [
+    "55811",
+    "239",
+    "636"
+   ],
+   "expect": "The 55811 runs of 239 inches from 636 inch pieces take 27906 pieces, 2 runs from each piece, leaving 4409387 inches."
+  },
+  {
+   "fn": "cuts",
+   "args": [
+    "71126",
+    "290",
+    "476"
+   ],
+   "expect": "The 71126 runs of 290 inches from 476 inch pieces take 71126 pieces, 1 run from each piece, leaving 13229436 inches."
+  },
+  {
+   "fn": "cuts",
+   "args": [
+    "46960",
+    "6",
+    "79"
+   ],
+   "expect": "The 46960 runs of 6 inches from 79 inch pieces take 3613 pieces, 13 runs from each piece, leaving 3667 inches."
+  },
+  {
+   "fn": "cuts",
+   "args": [
+    "61639",
+    "64",
+    "566"
+   ],
+   "expect": "The 61639 runs of 64 inches from 566 inch pieces take 7705 pieces, 8 runs from each piece, leaving 416134 inches."
+  },
+  {
+   "fn": "cuts",
+   "args": [
+    "22506",
+    "366",
+    "382"
+   ],
+   "expect": "The 22506 runs of 366 inches from 382 inch pieces take 22506 pieces, 1 run from each piece, leaving 360096 inches."
+  },
+  {
+   "fn": "cuts",
+   "args": [
+    "94800",
+    "577",
+    "741"
+   ],
+   "expect": "The 94800 runs of 577 inches from 741 inch pieces take 94800 pieces, 1 run from each piece, leaving 15547200 inches."
+  },
+  {
+   "fn": "nails",
+   "args": [
+    "21638",
+    "43",
+    "13"
+   ],
+   "expect": "The 21638 ft of trim at 43 inches takes 6040 nailing points, 13 nails each, 78520 nails in all."
+  },
+  {
+   "fn": "nails",
+   "args": [
+    "89599",
+    "16",
+    "13"
+   ],
+   "expect": "The 89599 ft of trim at 16 inches takes 67201 nailing points, 13 nails each, 873613 nails in all."
+  },
+  {
+   "fn": "nails",
+   "args": [
+    "93742",
+    "21",
+    "13"
+   ],
+   "expect": "The 93742 ft of trim at 21 inches takes 53568 nailing points, 13 nails each, 696384 nails in all."
+  },
+  {
+   "fn": "nails",
+   "args": [
+    "1177",
+    "41",
+    "11"
+   ],
+   "expect": "The 1177 ft of trim at 41 inches takes 346 nailing points, 11 nails each, 3806 nails in all."
+  },
+  {
+   "fn": "nails",
+   "args": [
+    "9554",
+    "23",
+    "2"
+   ],
+   "expect": "The 9554 ft of trim at 23 inches takes 4986 nailing points, 2 nails each, 9972 nails in all."
+  },
+  {
+   "fn": "nails",
+   "args": [
+    "42421",
+    "23",
+    "3"
+   ],
+   "expect": "The 42421 ft of trim at 23 inches takes 22134 nailing points, 3 nails each, 66402 nails in all."
+  },
+  {
+   "fn": "nails",
+   "args": [
+    "43864",
+    "40",
+    "12"
+   ],
+   "expect": "The 43864 ft of trim at 40 inches takes 13161 nailing points, 12 nails each, 157932 nails in all."
+  },
+  {
+   "fn": "nails",
+   "args": [
+    "68743",
+    "21",
+    "16"
+   ],
+   "expect": "The 68743 ft of trim at 21 inches takes 39283 nailing points, 16 nails each, 628528 nails in all."
+  },
+  {
+   "fn": "nails",
+   "args": [
+    "46033",
+    "48",
+    "2"
+   ],
+   "expect": "The 46033 ft of trim at 48 inches takes 11510 nailing points, 2 nails each, 23020 nails in all."
+  },
+  {
+   "fn": "nails",
+   "args": [
+    "1511",
+    "24",
+    "2"
+   ],
+   "expect": "The 1511 ft of trim at 24 inches takes 757 nailing points, 2 nails each, 1514 nails in all."
+  },
+  {
+   "fn": "nails",
+   "args": [
+    "64314",
+    "14",
+    "11"
+   ],
+   "expect": "The 64314 ft of trim at 14 inches takes 55128 nailing points, 11 nails each, 606408 nails in all."
+  },
+  {
+   "fn": "nails",
+   "args": [
+    "97707",
+    "39",
+    "2"
+   ],
+   "expect": "The 97707 ft of trim at 39 inches takes 30065 nailing points, 2 nails each, 60130 nails in all."
+  },
+  {
+   "fn": "nails",
+   "args": [
+    "94937",
+    "38",
+    "18"
+   ],
+   "expect": "The 94937 ft of trim at 38 inches takes 29982 nailing points, 18 nails each, 539676 nails in all."
+  },
+  {
+   "fn": "nails",
+   "args": [
+    "28256",
+    "39",
+    "18"
+   ],
+   "expect": "The 28256 ft of trim at 39 inches takes 8696 nailing points, 18 nails each, 156528 nails in all."
+  },
+  {
+   "fn": "nails",
+   "args": [
+    "91865",
+    "18",
+    "9"
+   ],
+   "expect": "The 91865 ft of trim at 18 inches takes 61245 nailing points, 9 nails each, 551205 nails in all."
+  },
+  {
+   "fn": "nails",
+   "args": [
+    "65142",
+    "17",
+    "20"
+   ],
+   "expect": "The 65142 ft of trim at 17 inches takes 45984 nailing points, 20 nails each, 919680 nails in all."
+  },
+  {
+   "fn": "nails",
+   "args": [
+    "46081",
+    "34",
+    "1"
+   ],
+   "expect": "The 46081 ft of trim at 34 inches takes 16265 nailing points, 1 nail each, 16265 nails in all."
+  },
+  {
+   "fn": "nails",
+   "args": [
+    "96163",
+    "29",
+    "3"
+   ],
+   "expect": "The 96163 ft of trim at 29 inches takes 39793 nailing points, 3 nails each, 119379 nails in all."
+  },
+  {
+   "fn": "nails",
+   "args": [
+    "21483",
+    "11",
+    "12"
+   ],
+   "expect": "The 21483 ft of trim at 11 inches takes 23437 nailing points, 12 nails each, 281244 nails in all."
+  },
+  {
+   "fn": "nails",
+   "args": [
+    "77811",
+    "29",
+    "17"
+   ],
+   "expect": "The 77811 ft of trim at 29 inches takes 32199 nailing points, 17 nails each, 547383 nails in all."
+  },
+  {
+   "fn": "nails",
+   "args": [
+    "65538",
+    "4",
+    "4"
+   ],
+   "expect": "The 65538 ft of trim at 4 inches takes 196615 nailing points, 4 nails each, 786460 nails in all."
+  },
+  {
+   "fn": "nails",
+   "args": [
+    "94432",
+    "33",
+    "12"
+   ],
+   "expect": "The 94432 ft of trim at 33 inches takes 34340 nailing points, 12 nails each, 412080 nails in all."
+  },
+  {
+   "fn": "nails",
+   "args": [
+    "58028",
+    "23",
+    "5"
+   ],
+   "expect": "The 58028 ft of trim at 23 inches takes 30277 nailing points, 5 nails each, 151385 nails in all."
+  },
+  {
+   "fn": "nails",
+   "args": [
+    "75837",
+    "28",
+    "3"
+   ],
+   "expect": "The 75837 ft of trim at 28 inches takes 32503 nailing points, 3 nails each, 97509 nails in all."
+  },
+  {
+   "fn": "nails",
+   "args": [
+    "34921",
+    "5",
+    "1"
+   ],
+   "expect": "The 34921 ft of trim at 5 inches takes 83812 nailing points, 1 nail each, 83812 nails in all."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "93640",
+    "1975.84"
+   ],
+   "expect": "The 93640 pieces at $1975.84 cost $185017657.60."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "3507",
+    "6556.68"
+   ],
+   "expect": "The 3507 pieces at $6556.68 cost $22994276.76."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "57884",
+    "7647.23"
+   ],
+   "expect": "The 57884 pieces at $7647.23 cost $442652261.32."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "63226",
+    "1990.04"
+   ],
+   "expect": "The 63226 pieces at $1990.04 cost $125822269.04."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "41889",
+    "859.58"
+   ],
+   "expect": "The 41889 pieces at $859.58 cost $36006946.62."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "3107",
+    "1027.36"
+   ],
+   "expect": "The 3107 pieces at $1027.36 cost $3192007.52."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "18876",
+    "924.86"
+   ],
+   "expect": "The 18876 pieces at $924.86 cost $17457657.36."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "32843",
+    "3501.94"
+   ],
+   "expect": "The 32843 pieces at $3501.94 cost $115014215.42."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "79877",
+    "7613.72"
+   ],
+   "expect": "The 79877 pieces at $7613.72 cost $608161112.44."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "4342",
+    "960.14"
+   ],
+   "expect": "The 4342 pieces at $960.14 cost $4168927.88."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "74438",
+    "4689.99"
+   ],
+   "expect": "The 74438 pieces at $4689.99 cost $349113475.62."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "4858",
+    "3979.09"
+   ],
+   "expect": "The 4858 pieces at $3979.09 cost $19330419.22."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "26214",
+    "2808.52"
+   ],
+   "expect": "The 26214 pieces at $2808.52 cost $73622543.28."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "6726",
+    "2498.71"
+   ],
+   "expect": "The 6726 pieces at $2498.71 cost $16806323.46."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "81493",
+    "6850.41"
+   ],
+   "expect": "The 81493 pieces at $6850.41 cost $558260462.13."
+  }
+ ],
+ "errors": [
+  [
+   "pieces",
+   [
+    "0",
+    "8"
+   ]
+  ],
+  [
+   "pieces",
+   [
+    "100001",
+    "8"
+   ]
+  ],
+  [
+   "pieces",
+   [
+    "126",
+    "0"
+   ]
+  ],
+  [
+   "pieces",
+   [
+    "126",
+    "51"
+   ]
+  ],
+  [
+   "cuts",
+   [
+    "0",
+    "36",
+    "96"
+   ]
+  ],
+  [
+   "cuts",
+   [
+    "5",
+    "0",
+    "96"
+   ]
+  ],
+  [
+   "cuts",
+   [
+    "5",
+    "36",
+    "0"
+   ]
+  ],
+  [
+   "cuts",
+   [
+    "5",
+    "97",
+    "96"
+   ]
+  ],
+  [
+   "cuts",
+   [
+    "5",
+    "36",
+    "1201"
+   ]
+  ],
+  [
+   "nails",
+   [
+    "0",
+    "16",
+    "2"
+   ]
+  ],
+  [
+   "nails",
+   [
+    "126",
+    "0",
+    "2"
+   ]
+  ],
+  [
+   "nails",
+   [
+    "126",
+    "49",
+    "2"
+   ]
+  ],
+  [
+   "nails",
+   [
+    "126",
+    "16",
+    "0"
+   ]
+  ],
+  [
+   "nails",
+   [
+    "126",
+    "16",
+    "21"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "0",
+    "7.25"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "16",
+    "0"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "16",
+    "10000.01"
+   ]
+  ]
+ ]
+}
