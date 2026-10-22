@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Baseboard Math - app</title>
+<style>
+  :root { --accent:#3b3f7a; --ink:#15162b; --paper:#f3f3f9; --soft:#e3e4f2; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2rem 1.2rem; }
+  h1 { font-size:1.8rem; color:var(--accent); }
+  .boundary { margin:1rem 0 1.4rem; }
+  .panel { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1rem 1.1rem; margin-bottom:1.1rem; }
+  h2 { font-size:1.1rem; margin-bottom:.6rem; }
+  p.note { font-size:.9rem; margin-bottom:.4rem; }
+  label { display:block; font-size:.9rem; margin:.45rem 0 .1rem; }
+  input { width:100%; padding:.45rem .55rem; font-size:1rem; border:1px solid #a7a9d0; border-radius:6px; background:#fff; color:var(--ink); }
+  .row2 { display:grid; grid-template-columns:1fr 1fr; gap:.6rem; }
+  .out { margin-top:.7rem; font-size:.98rem; background:#fff; border:1px dashed #a7a9d0; border-radius:6px; padding:.6rem .7rem; min-height:2.4rem; overflow-wrap:anywhere; }
+  .out.err { border-color:#b03030; color:#8a1f1f; }
+  footer { margin-top:1.8rem; font-size:.85rem; color:#66689a; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Baseboard Math</h1>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    This page counts baseboard and trim with division and rounding-up: the pieces a run takes, the runs a piece yields, the nails along a run, and the cost. It uses one named constant: 12 inches in a foot. The run lengths, the piece length, the nail spacing, the nails a point and the prices are yours to measure and read off your own plans and receipt. It applies the counting as written, so it has not seen your room and does not know your corners, your miters, your waste habits or your nailing practice, and it gives no verdict that an order is enough or that a job will fit. Every other number here is your own entry.
+  </div>
+
+  <div class="panel">
+    <h2>The pieces truth</h2>
+    <p class="note">Pieces: the trim run divided by the piece length, rounded up, with the feet left.</p>
+    <div class="row2"><div><label for="p-r">Trim run (ft)</label><input id="p-r" type="text" value="126"></div><div><label for="p-s">Piece length (ft)</label><input id="p-s" type="text" value="8"></div></div>
+    <div class="out" id="p-out"></div>
+  </div>
+  <div class="panel">
+    <h2>The runs truth</h2>
+    <p class="note">Runs: the pieces a count of equal runs takes, when each piece is cut into as many whole runs as fit.</p>
+    <div class="row2"><div><label for="r-n">Runs</label><input id="r-n" type="text" value="5"></div><div><label for="r-l">Run length (inches)</label><input id="r-l" type="text" value="36"></div></div>
+    <div class="row2"><div><label for="r-s">Piece length (inches)</label><input id="r-s" type="text" value="96"></div></div>
+    <div class="out" id="r-out"></div>
+  </div>
+  <div class="panel">
+    <h2>The nails truth</h2>
+    <p class="note">Nails: the run in inches over the spacing, rounded up, plus 1 for the far end, times the nails a point.</p>
+    <div class="row2"><div><label for="n-r">Trim run (ft)</label><input id="n-r" type="text" value="126"></div><div><label for="n-s">Spacing (inches)</label><input id="n-s" type="text" value="16"></div></div>
+    <div class="row2"><div><label for="n-p">Nails a point</label><input id="n-p" type="text" value="2"></div></div>
+    <div class="out" id="n-out"></div>
+  </div>
+  <div class="panel">
+    <h2>The cost truth</h2>
+    <p class="note">Cost: the pieces at their price.</p>
+    <div class="row2"><div><label for="c-n">Pieces</label><input id="c-n" type="text" value="16"></div><div><label for="c-p">Price a piece (dollars)</label><input id="c-p" type="text" value="7.25"></div></div>
+    <div class="out" id="c-out"></div>
+  </div>
+
+  <footer>Baseboard Math is exact arithmetic over the numbers you enter. <a href="index.html">Why it exists</a>.</footer>
+</main>
+<script src="engine.js"></script>
+<script>
+  function show(id, fn) {
+    const out = document.getElementById(id);
+    try { out.textContent = fn(); out.classList.remove("err"); }
+    catch (e) { out.textContent = e.message; out.classList.add("err"); }
+  }
+  function recalc() {
+    const v = (id) => document.getElementById(id).value;
+    show("p-out", () => piecesTruth(v("p-r"), v("p-s")));
+    show("r-out", () => cutsTruth(v("r-n"), v("r-l"), v("r-s")));
+    show("n-out", () => nailsTruth(v("n-r"), v("n-s"), v("n-p")));
+    show("c-out", () => costTruth(v("c-n"), v("c-p")));
+  }
+  document.querySelectorAll("input").forEach((el) => {
+    el.addEventListener("input", recalc);
+    el.addEventListener("change", recalc);
+  });
+  recalc();
+</script>
+</body>
+</html>
